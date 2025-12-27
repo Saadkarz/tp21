@@ -255,7 +255,7 @@ docker ps
 
 ![Docker MySQL Running](Screenshots/Screenshot%202025-12-27%20132217.png)
 
-*✅ MySQL Docker Container Started Successfully*
+
 
 </div>
 
@@ -272,7 +272,7 @@ mvn spring-boot:run
 
 ![Eureka Server Started](Screenshots/Screenshot%202025-12-27%20132233.png)
 
-*✅ Eureka Server Running on Port 8761*
+
 
 </div>
 
@@ -289,7 +289,7 @@ mvn spring-boot:run
 
 ![Service Client Started](Screenshots/Screenshot%202025-12-27%20132248.png)
 
-*✅ Service-Client Running & Registered in Eureka*
+
 
 </div>
 
@@ -306,7 +306,7 @@ mvn spring-boot:run
 
 ![Service Car Started](Screenshots/Screenshot%202025-12-27%20132302.png)
 
-*✅ Service-Car Running & Registered in Eureka*
+
 
 </div>
 
@@ -320,7 +320,7 @@ mvn spring-boot:run
 
 ![Eureka Dashboard](Screenshots/Screenshot%202025-12-27%20132319.png)
 
-*The Eureka Dashboard showing both **SERVICE-CLIENT** and **SERVICE-CAR** registered and UP*
+
 
 </div>
 
@@ -332,7 +332,7 @@ mvn spring-boot:run
 
 ![API Testing](Screenshots/Screenshot%202025-12-27%20132355.png)
 
-*Testing the Car API with Client Enrichment - Full Integration Working*
+
 
 </div>
 
