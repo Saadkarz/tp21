@@ -1,0 +1,70 @@
+package com.example.client.entities;
+
+import jakarta.persistence.*;
+
+/**
+ * Entité Client
+ * 
+ * @Entity : mappe cette classe vers une table MySQL "client"
+ * @Id + IDENTITY : auto-incrément MySQL pour l'ID
+ * 
+ *     Constructeur vide obligatoire : Hibernate instancie l'objet par réflexion
+ */
+@Entity
+@Table(name = "clients")
+public class Client {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false)
+    private String nom;
+
+    private Float age;
+
+    // Constructeur vide obligatoire pour JPA/Hibernate
+    public Client() {
+    }
+
+    // Constructeur avec paramètres
+    public Client(Long id, String nom, Float age) {
+        this.id = id;
+        this.nom = nom;
+        this.age = age;
+    }
+
+    // Getters et Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public Float getAge() {
+        return age;
+    }
+
+    public void setAge(Float age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
